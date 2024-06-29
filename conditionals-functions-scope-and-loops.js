@@ -22,7 +22,7 @@ let lessThanEqEq = 4 <= 9;
 let notEquals = 5 !== 2;
 
 // === standard comparison operator not compatible with different types
-// coersion between types can be prevented by using ==
+// coercion between types can be prevented by using ==
 
  */
 /*
@@ -52,7 +52,7 @@ function compareStorePrices (storeA, storeB) {
         console.log("Their prices are equal.")
     }
 }
-
+compareStorePrices(3.10, 2.25)
 //compareStorePrices(10,5);
 //compareStorePrices(7,10);
 
@@ -82,13 +82,44 @@ addNumbers(1, 2, 10);
 
 //Arrays
 
-//indeces refernce positions within the array.
+//indices reference positions within the array.
 
  */
 
+//
+/*
 let ourArray = [1, 2, 3, 4, ['a', 'b', 'c']];
-console.log(ourArray[4][0]);
 
-//23:07
+let newArr = ourArray[4];
+console.log(newArr[0]);
+ */
+
+//LOOPS: If we don't' know how long our arrays are, we can use loops to repeat a portion of code until a certain condition is met.
+
+//"for loop" has a counter, a comparison, and an incrementor. The variable used is "i".
+let ourArray = [1, 2, 3, 4, 5, 6, 7];
+let arrLen = ourArray.length;
+
+for(let i = 0; i < arrLen; i++){
+    //console.log("i is equal to: " + i);
+    console.log(ourArray[i]);
+}
+
+//when you place a loop inside another loop, the inner loop will run for every time the outer loop completes.
+
+//"while loop:" runs until a conditional is false.
+
+let x = 0;
+while(x < 10 ) {
+    console.log('Ran');
+    x = x + 1;
+}
+
+
+
+
+
+
+
 
 
